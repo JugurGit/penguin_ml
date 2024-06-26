@@ -13,7 +13,7 @@ st.write(
 )
 
 mdp = st.text_input('entrer le mdp')
-if mdp != 'trop fort':
+if mdp != st.secrets['password']:
    st.stop()
 
 penguin_file = st.file_uploader('Charger votre propre dataset sur les penguins')
