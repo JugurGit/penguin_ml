@@ -11,6 +11,11 @@ st.write(
   """Cette application utilise 6 entrées via le formulaire ci-dessous pour prédire l'espèce de penguin en utilisant un modèle de classification random forest construit à 
    partir d'un dataset de Kaggle."""
 )
+
+mdp = st.text_input('entrer le mdp')
+if mdp != 'trop fort':
+   st.stop()
+
 penguin_file = st.file_uploader('Charger votre propre dataset sur les penguins')
 
 if penguin_file is None:
