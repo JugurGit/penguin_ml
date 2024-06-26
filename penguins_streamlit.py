@@ -6,7 +6,7 @@ import pickle
 from sklearn.metrics import accuracy_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-st.title('Quelle est l\'espèce du penguin ?')
+st.title('Quelle est l\'espèce du gros penguin ?')
 st.write(
   """Cette application utilise 6 entrées via le formulaire ci-dessous pour prédire l'espèce de penguin en utilisant un modèle de classification random forest construit à 
    partir d'un dataset de Kaggle."""
